@@ -6,12 +6,13 @@ Playing video games is always fun, but what about making one? In this tutorial, 
 
 ### Prerequisites
 
-Before we begin it would help the you as the reader to have the following:
+Before we begin, it would help you as the reader to have the following:
 
 A basic understanding of C# programming language.
+A basic understanding of Windows forms.
 Visual studio installed on your system.
 
-If you don’t have Visual Studio installed on your computer, you can check this article on how to set up the C# environment in Visual Studio [here](https://www.geeksforgeeks.org/setting-environment-c-sharp/), and if you are new to windows forms you can check this tutorial that would help you understand The basics of it [here](https://www.section.io/engineering-education/getting-started-with-windows-forms-using-c-sharp/).
+If you don’t have Visual Studio installed on your computer, you can check this article on how to set up the C# environment in Visual Studio [here](https://www.geeksforgeeks.org/setting-environment-c-sharp/), and if you are new to Windows forms you can check this tutorial that would help you understand The basics of it [here](https://www.section.io/engineering-education/getting-started-with-windows-forms-using-c-sharp/).
 
 
 ### How to play/win the game
