@@ -21,7 +21,7 @@ If you don’t have Visual Studio installed on your computer, you can check this
 
 The system of Mastermind will randomly produce 4 colors from 6 colors stored in the system (allowing duplicate colors), and those 4 colors will remain invisable to the player untill he win or lose the game.
 
-The player will have to guess the 4 colors produced by the system, you will have 10 chances to guess the colors before losing the game, and each try will give you a hint, if the player choses one of the colors included in one of the digits produced by the system but not in the right place it will glow red, but if the color is included in one of the digits & at the right place it will glow black. The player must have all the colors in right place in order to win.
+The player will have to guess the 4 colors produced by the system, you will have 10 chances to guess the colors before losing the game, and each round will give you a hint, if the player choses one of the colors included in one of the digits produced by the system but not in the right place it will glow red, but if the color is included in one of the digits & at the right place it will glow black. The player must have all the colors in right place in order to win.
 
 ### Building the form & the controls of the game
 
@@ -119,7 +119,7 @@ First we define a random object from the random class, then we use it to produce
             int d = rnd.Next(1, 7);
             int blue = 1, red = 2, green = 3, yellow = 4, pink = 5, purple = 6;
 ```
-After that we need to check what the random method produced for each digit, and therfore we need to check the `a` 6 time for each color
+After that we need to check what the random method produced for each digit, and therfore we need to check the `a` 6 times for each color
 
 ```c#
  if (a == blue)
