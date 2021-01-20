@@ -102,7 +102,7 @@ private void Col2_Click(object sender, EventArgs e)
         }
 ```
 Now we need to define the GO method that will start the game and produce the 4 random colors.
-first we define a random object from the random class, then we use it to produce 4 random numbers from 1 to 6, and each number means a color.
+First we define a random object from the random class, then we use it to produce 4 random numbers from 1 to 6, and each color will have a value.
 
 ```c#
  private void GO_Click(object sender, EventArgs e)
