@@ -23,7 +23,7 @@ The system of Mastermind will randomly produce 4 colors from 6 colors stored in 
 
 ### Building the form & the controls of the game
 
-We will use the tool box to select the controls that we need in this game. First of all, we will add 10 labels for each chance, and for each label we will add 4 buttons for the colors one button for the try check and another 4 buttons for the hints, total 9 buttons for each try (label). Finaly 1 button for the start (GO) 4 buttons for the hidden colors produced by the system and 1 one button for the win or lose statement.
+We will use the tool box to select the controls that we need in this game. First of all, we will add 10 labels for each round, and for each label we will add 4 buttons for the colors one button for the check and another 4 buttons for the hints, total 9 buttons for each round (label). Finally 1 button for the start (GO) 4 buttons for the hidden colors produced by the system and 1 one button for the win or lose statement.
 
 This is how the form should look like after including all the controls, and remember that you can always change the fonts & the colors to what ever that suits your taste!
 
