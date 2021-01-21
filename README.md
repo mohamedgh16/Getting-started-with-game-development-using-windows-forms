@@ -21,10 +21,11 @@ If you don’t have Visual Studio installed on your computer, you can check this
 
 The system of Mastermind will randomly produce 4 colors from 6 colors stored in the system (allowing duplicate colors), and those 4 colors will remain invisable to the player untill he win or lose the game.
 
-- The player will have to guess the 4 colors produced by the system, you will have 10 chances to guess the colors before losing the game, and each round will give you a hint.
+- The player will have to guess the 4 colors produced by the system.
+- the player will have 10 chances to guess the colors before losing the game, and each round will give you a hint.
 - If the player choses one of the colors included in one of the digits produced by the system but not in the right place it will glow red.
 - If the color is included in one of the digits & at the right place it will glow black.
-- The player must have all the colors in right place in order to win.
+- In order to win the player must have all the colors in right place .
 
 ### Building the game
 
@@ -68,7 +69,7 @@ empty | VIC
 
 First of all we need to define the method that will change the color of all the buttons (Col1,Col2,Col3,...).
 In order to do so we need to change the color of the button each time the player clicks on it, and after it finishes all the colors, it will reset
-the counter and show the colors again on each click.
+the counter (i) and show the colors again on each click.
 ```c#
  int i = 0;
         void Changecolor(Button x)
@@ -122,7 +123,7 @@ First we define a random object from the random class, then we use it to produce
             int d = rnd.Next(1, 7);
             int blue = 1, red = 2, green = 3, yellow = 4, pink = 5, purple = 6;
 ```
-After that we need to check what the random method produced for each digit, and therfore we need to check the `a` 6 times for each color
+After that we need to check what the random method produced for each digit, and therfore we need to check the `a` 6 times for each color.
 
 ```c#
  if (a == blue)
@@ -143,7 +144,7 @@ After that we need to check what the random method produced for each digit, and 
  //The previous line will turn the first Check button to Visible in order to start the first round.
         }        
 ```
-**NOTE** that you need to repeat the previous piece of code with `b` `c` and `d` before closing the method
+**NOTE** that you need to repeat the previous piece of code with `b` `c` and `d` before closing the method.
 
 
 Now we need to define the Check method that will check the colors chosed by the player and compare them with the colors produced by the system.
