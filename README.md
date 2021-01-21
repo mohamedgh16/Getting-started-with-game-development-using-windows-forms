@@ -267,7 +267,7 @@ if (w == 1)
             }
         }
  ```
-Finally we will use this method with all the 10 check buttons.
+Finally we will use this method with all of the 10 check buttons.
 
 ```c#
  private void ch1_Click(object sender, EventArgs e)
