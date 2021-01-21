@@ -2,28 +2,31 @@
 
 ### Introduction
 
-Playing video games is always fun, but what about making one? In this tutorial, we will use windows forms to build a game and go through the steps of making a small puzzle game called Mastermind. Mastermind is a puzzle game that tests the memory and the ability of the player to determine the exact output between all the possibilities.
+Playing video games is always fun, but what about making one? In this tutorial, we will go through the steps of making a small puzzle game called Mastermind using windows forms. Mastermind is a puzzle game that tests the memory and the ability of the player to determine the exact output between all the possibilities.
 
 ### Prerequisites
 
 Before we begin, it would help you as the reader to have the following:
 
-A basic understanding of C# programming language.
+- A basic understanding of C# programming language.
 
-A basic understanding of Windows forms.
+- A basic understanding of Windows forms.
 
-Visual studio installed on your system.
+- Visual studio installed on your system.
 
 If you don’t have Visual Studio installed on your computer, you can check this article on how to set up the C# environment in Visual Studio [here](https://www.geeksforgeeks.org/setting-environment-c-sharp/), and if you are new to Windows forms you can check this tutorial that would help you understand The basics of it [here](https://www.section.io/engineering-education/getting-started-with-windows-forms-using-c-sharp/).
 
 
-### How to play/win the game
+### How to play 
 
 The system of Mastermind will randomly produce 4 colors from 6 colors stored in the system (allowing duplicate colors), and those 4 colors will remain invisable to the player untill he win or lose the game.
 
-The player will have to guess the 4 colors produced by the system, you will have 10 chances to guess the colors before losing the game, and each round will give you a hint, if the player choses one of the colors included in one of the digits produced by the system but not in the right place it will glow red, but if the color is included in one of the digits & at the right place it will glow black. The player must have all the colors in right place in order to win.
+- The player will have to guess the 4 colors produced by the system, you will have 10 chances to guess the colors before losing the game, and each round will give you a hint.
+- If the player choses one of the colors included in one of the digits produced by the system but not in the right place it will glow red.
+- If the color is included in one of the digits & at the right place it will glow black.
+- The player must have all the colors in right place in order to win.
 
-### Building the form & the controls of the game
+### Building the game
 
 We will use the tool box to select the controls that we need in this game. First of all, we will add 10 labels for each round, and for each label we will add 4 buttons for the colors one button for the check and another 4 buttons for the hints, total 9 buttons for each round (label). Finally 1 button for the start (GO) 4 buttons for the hidden colors produced by the system and 1 one button for the win or lose statement.
 
