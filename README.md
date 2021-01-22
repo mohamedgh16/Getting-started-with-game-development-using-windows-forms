@@ -25,16 +25,15 @@ The system of Mastermind will randomly produce 4 colors from 6 colors stored in 
 - the player will have 10 chances to guess the colors before losing the game, and each round will give you a hint.
 - If the player choses one of the colors included in one of the digits produced by the system but not in the right place it will glow red.
 - If the color is included in one of the digits & at the right place it will glow black.
-- In order to win the player must have all the colors in right place .
+- In order to win the player must have all the colors in right place.
 
 ### Building the game
 
-We will use the tool box to select the controls that we need in this game. First of all, we will add 10 labels for each round, and for each label we will add 4 buttons for the colors one button for the check and another 4 buttons for the hints, total 9 buttons for each round (label). Finally 1 button for the start (GO) 4 buttons for the hidden colors produced by the system and 1 one button for the win or lose statement.
+We will use the toolbox to select the controls that we need in this game. First of all, we will add 10 labels for each round, and for each label, we will add 4 buttons for the colors one button for the check and another 4 buttons for the hints, a total of 9 buttons for each round (label). Finally 1 button for the start (GO) 4 buttons for the hidden colors produced by the system and 1 one button for the win or lose statement.
 
 This is how the form should look like after including all the controls, and remember that you can always change the fonts & the colors to what ever that suits your taste!
 
-![Mastermind_form](https://github.com/mohamedgh16/Getting-started-with-game-development-using-windows-forms/blob/main/Mastermind_form.png).
-
+![Mastermind_form](/engineering-education/getting-started-with-game-development-using-windows-forms/Mastermind_form.png)
 this is the table of the Texts & names of all the controls used in this form.
 Text | Name
 ---- | ----
@@ -123,7 +122,7 @@ First we define a random object from the random class, then we use it to produce
             int d = rnd.Next(1, 7);
             int blue = 1, red = 2, green = 3, yellow = 4, pink = 5, purple = 6;
 ```
-After that we need to check what the random method produced for each digit, and therfore we need to check the `a` 6 times for each color.
+After that, we need to check what the random method produced for each digit, and therefore we need to check the `a` 6 times for each color.
 
 ```c#
  if (a == blue)
@@ -237,7 +236,7 @@ The next piece of code will check how many buttons chosed by the player that has
             if (Col1.BackColor == cool1.BackColor && Col2.BackColor == cool2.BackColor && Col3.BackColor == cool3.BackColor && Col4.BackColor == cool4.BackColor)
                 w = 4;
 ```
-After that we will use the w counter to determine how many black hint buttons will glow, and if its 4 then you have won the game!
+After that, we will use the w counter to determine how many black hint buttons will glow, and if it's 4 then you have won the game!
 
 ```c#
 if (w == 1)
@@ -267,7 +266,7 @@ if (w == 1)
             }
         }
  ```
-Finally we will use this method with all of the 10 check buttons.
+Finally, we will use this method with all of the 10 check buttons.
 
 ```c#
  private void ch1_Click(object sender, EventArgs e)
@@ -288,7 +287,7 @@ Finally we will use this method with all of the 10 check buttons.
         
         //Repeat for all the Check buttons...
 ```
-The final check button will have an extra code, because reaching the final round without winning means that you have lost the game.
+The final check button will have an extra code because reaching the final round without winning means that you have lost the game.
 
 ```c#
         private void ch10_Click(object sender, EventArgs e)
@@ -315,7 +314,7 @@ The final check button will have an extra code, because reaching the final round
 ```
 ### Conclusion
 
-In this tutorial, we have created a puzzle game called Mastermind using windows forms. We have used the controls & the properties window to create the form of it, and then we connected these controls with the methods inside of it to give life to the game that we made! Dont forget to test out the code to fully understand how it works.
+In this tutorial, we have created a puzzle game called Mastermind using windows forms. We have used the controls & the properties window to create the form of it, and then we connected these controls with the methods inside of it to give life to the game that we made! Don't forget to test out the code to fully understand how it works.
 
 
 
